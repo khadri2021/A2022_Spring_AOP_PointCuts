@@ -1,4 +1,4 @@
-package com.khadri.spring.core.service;
+package com.khadri.spring.core.food.service;
 
 
 import org.springframework.stereotype.Component;

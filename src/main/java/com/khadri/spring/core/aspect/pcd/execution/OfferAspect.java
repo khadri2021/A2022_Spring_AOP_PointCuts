@@ -1,4 +1,4 @@
-package com.khadri.spring.core.aspect;
+package com.khadri.spring.core.aspect.pcd.execution;
 
 
 import org.aspectj.lang.annotation.*;
@@ -9,12 +9,12 @@ import javax.swing.plaf.synth.SynthOptionPaneUI;
 @Aspect
 @Component
 public class OfferAspect {
-    @Before("execution(void com.khadri.spring.core.service.FestiveFoodService.biryani())")
+    @Before("execution(void com.khadri.spring.core.food.service.FestiveFoodService.biryani())")
     public void applyOfferCoupon(){
         System.out.println("Offer Applied : Added Starter ");
     }
 
-    @After("execution(void com.khadri.spring.core.service.FestiveFoodService.biryani())")
+    @After("execution(void com.khadri.spring.core.food.service.FestiveFoodService.biryani())")
     public void removeOfferCoupon(){
         System.out.println("Offer Closed for you");
     }
